@@ -66,30 +66,32 @@ function Claim() {
                             </p>
                         </div>
 
-                        <Grid container spacing={4} style={{ marginBottom: "5px" }}>
-                            <Grid item lg={6} md={6} sm={6} xs={12}>
-                                <div
-                                    className="stake-card-tab-panel-btn"
-                                    onClick={() => {
-                                        if (isPendingTxn(pendingTransactions, "compounding")) return;
-                                        onChangeClaim("compound");
-                                    }}
-                                >
-                                    <p>{txnButtonText(pendingTransactions, "compounding", "Compound")}</p>
-                                </div>
+                        {address && (
+                            <Grid container spacing={4} style={{ marginBottom: "5px" }}>
+                                <Grid item lg={6} md={6} sm={6} xs={12}>
+                                    <div
+                                        className="stake-card-tab-panel-btn"
+                                        onClick={() => {
+                                            if (isPendingTxn(pendingTransactions, "compounding")) return;
+                                            onChangeClaim("compound");
+                                        }}
+                                    >
+                                        <p>{txnButtonText(pendingTransactions, "compounding", "Compound")}</p>
+                                    </div>
+                                </Grid>
+                                <Grid item lg={6} md={6} sm={6} xs={12}>
+                                    <div
+                                        className="stake-card-tab-panel-btn"
+                                        onClick={() => {
+                                            if (isPendingTxn(pendingTransactions, "claiming")) return;
+                                            onChangeClaim("claim");
+                                        }}
+                                    >
+                                        <p>{txnButtonText(pendingTransactions, "claiming", "Claim")}</p>
+                                    </div>
+                                </Grid>
                             </Grid>
-                            <Grid item lg={6} md={6} sm={6} xs={12}>
-                                <div
-                                    className="stake-card-tab-panel-btn"
-                                    onClick={() => {
-                                        if (isPendingTxn(pendingTransactions, "claiming")) return;
-                                        onChangeClaim("claim");
-                                    }}
-                                >
-                                    <p>{txnButtonText(pendingTransactions, "claiming", "Claim")}</p>
-                                </div>
-                            </Grid>
-                        </Grid>
+                        )}
                     </Grid>
                 </div>
             </Zoom>

@@ -38,7 +38,7 @@ function App() {
 
     const loadApp = useCallback(
         loadProvider => {
-            dispatch(loadAppDetails({ networkID: chainID, provider: loadProvider }));
+            dispatch(loadAppDetails({ networkID: 1, provider: loadProvider }));
         },
         [connected],
     );
