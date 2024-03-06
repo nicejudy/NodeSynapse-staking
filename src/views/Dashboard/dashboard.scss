@@ -1,0 +1,103 @@
+.dashboard-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+
+  width: 89%;
+  max-width: 833px;
+  margin: auto;
+
+  .dashboard-infos-wrap{
+    .dashboard-card{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      position: relative;
+      z-index: 2;
+      
+      @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(100px);
+      }
+    
+      /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+      @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        background: #181B1C;
+      }
+
+      border-radius: 10px;
+      padding: 13px 0;
+
+      .card-title {
+        font-family: Montserrat Medium;
+        font-weight: 500;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+  
+      .card-value {
+        font-family: Montserrat Bold;
+        font-weight: bold;
+        font-size: 24px;
+        font-weight: bold;
+        color: #FFFFFF;
+      }
+    }
+
+    .dashboard-card1{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 2;
+
+      padding: 28px 28px;
+      
+      @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(100px);
+      }
+    
+      /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+      @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        background: #181B1C;
+      }
+
+      border-radius: 10px;
+
+      .card-title {
+        font-family: Montserrat Bold;
+        font-weight: 500;
+        font-size: 24px;
+        color: rgba(255, 255, 255);
+      }
+  
+      .card-value {
+        font-family: Montserrat Bold;
+        font-weight: bold;
+        font-size: 32px;
+        font-weight: bold;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+.social-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 1.3rem;
+  a {
+    &:hover {
+      transform: scale(1.1);
+    }
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

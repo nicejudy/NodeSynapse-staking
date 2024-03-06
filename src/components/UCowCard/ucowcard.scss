@@ -1,0 +1,147 @@
+.ucow-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 250px;
+  max-width: 350px;
+  margin: auto;
+
+  position: relative;
+  z-index: 2;
+
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    backdrop-filter: blur(100px);
+  }
+
+  // /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+  // @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  //   background: #181B1C;
+  // }
+
+  border-radius: 30px;
+  padding: 24px 0px 18px 0px;
+
+  .owner-badge {
+    position: fixed;
+    left: 32px;
+    top: 32px;
+  }
+  .opensea-badge {
+    position: fixed;
+    right: 24px;
+    top: 20px;
+  }
+
+  .card-image {
+    cursor: pointer;
+  }
+
+  .card-title {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+
+    .MuiTypography-colorPrimary {
+      color: white;
+    }
+  }
+
+  .card-opensea-link {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 30px;
+    color: rgb(83, 255, 60);
+    text-align: center;
+  }
+
+  .card-tier {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .card-name-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .card-name-text {
+      font-weight: 500;
+      font-size: 24px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 1);
+      text-align: left;
+    }
+
+    .card-copylink {
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+      position: fixed;
+      right: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      background: #ffffff55;
+      cursor: pointer;
+
+      // top: 39px;
+      &:hover {
+        background-color: #ffffff33;
+      }
+
+      &:active {
+        background-color: #ffffff11;
+      }
+    }
+  }
+
+
+
+  .dapp-topbar-btns-wrap {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    // width: 100%;
+  }
+
+  .dapp-topbar-btns-wrap-full {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: 100%;
+    justify-content: center;
+
+    div {
+      width: 60%;
+      margin-left: 20px;
+      justify-content: center;
+    }
+  }
+
+  .card-value {
+    //   font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-bottom: 20px !important;
+  }
+}
+@media (max-width: 860px) {
+  .nft-image {
+    width: 200px;
+  }
+  .ucow-card {
+    width: 250px;
+    margin: auto;
+  }
+}
+@media (max-width: 480px) {
+  .nft-image {
+    width: 200px;
+  }
+  .ucow-card {
+    width: 250px;
+    margin: auto;
+  }
+}

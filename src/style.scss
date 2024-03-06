@@ -1,0 +1,181 @@
+@import "./assets/styles/fonts.scss";
+
+* {
+  outline: none;
+  -ms-overflow-style: none !important;
+  /* IE and Edge */
+  scrollbar-width: none !important;
+
+  /* Firefox */
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
+html,
+body,
+#root {
+  font-family: "Poppins";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --light-paper-bg: linear-gradient(65.7deg, #f5f5f5 8.35%, #ffffff 100%);
+  --dark-paper-bg: #161616;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  z-index: 1;
+  background-size: cover;
+  font-family: "Poppins";
+  transition: all ease 0.33ms;
+}
+
+p{
+  margin: 0;
+}
+
+.MuiDrawer-paperAnchorDockedLeft {
+  border-right: 0 !important;
+}
+
+.recharts-wrapper {
+  position: absolute;
+}
+
+#choose-bond-view {
+  .bond-data-card {
+    .data-row {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      margin: 12px 0px;
+    }
+
+    .data-row-centered {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      margin: 12px 0px;
+
+      .marginedBtn {
+        margin: 0.3rem;
+      }
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield !important;
+}
+
+a:hover svg {
+  color: inherit;
+}
+
+.tooltip {
+  z-index: 9999999;
+}
+
+.TabBar-container .active .MuiButton-text:hover {
+  background-color: #ef7fc1 !important;
+}
+
+.TabBar-container .active .MuiButton-text {
+  color: #fff !important;
+}
+
+.link-text {
+  font-size: 18px;
+}
+
+.small-text {
+  font-size: 16px;
+}
+.less-small-text {
+  font-size: 12px;
+}
+
+.subtitle {
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+.NavItem-title {
+  font-size: 18px !important;
+}
+
+.light .right-nav-icon path {
+  fill: black;
+}
+
+.dark .right-nav-icon path {
+  fill: white;
+}
+
+.wallet-connect-link {
+  margin-right: 9px;
+  font-size: 0.875rem;
+  height: 39px;
+  display: flex;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  border: 1px solid white;
+
+  &:hover {
+    border: 1px solid #16efdd;
+    color: #16efdd;
+    background: none;
+  };
+
+  &:hover path {
+    stroke: #16efdd,
+  };
+
+  &:active path {
+    stroke: #16efdd,
+  }
+}
+.wallet-connect-link path {
+  stroke: #fff;
+}
+.light .wallet-connect-link {
+  color: #181A1D;
+  border: 1px solid #181A1D;
+  &:hover {
+    border: 1px solid #16efdd;
+    color: #16efdd;
+    background: none;
+  };
+
+  &:hover path {
+    stroke: #16efdd,
+  };
+
+  &:active path {
+    stroke: #16efdd,
+  }
+}
+
+.light .wallet-connect-link path {
+  stroke: #181A1D;
+}

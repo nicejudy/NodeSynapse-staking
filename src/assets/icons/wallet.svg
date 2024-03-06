@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="34" viewBox="0 0 37 34" fill="none">
+	<g id="wallet">
+		<g id="Group">
+			<path id="Vector" d="M33.36 20.394H27.1189C24.8273 20.3927 22.9698 18.6871 22.9684 16.5813C22.9684 14.4756 24.8273 12.77 27.1189 12.7687H33.36" stroke="#E1E1E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			<path id="Vector_2" d="M27.8255 16.4943H27.3445" stroke="#E1E1E1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+			<g id="Vector_3">
+				<path d="M25.2696 3.25H11.9443C7.00532 3.25 2.85416 6.94827 2.85416 11.6842V21.8517C2.85416 26.5876 7.00532 30.2858 11.9443 30.2858H25.2696C30.2086 30.2858 34.3597 26.5876 34.3597 21.8517V11.6842C34.3597 6.94827 30.2086 3.25 25.2696 3.25Z" stroke="#E1E1E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M25.2696 3.25H11.9443C7.00532 3.25 2.85416 6.94827 2.85416 11.6842V21.8517C2.85416 26.5876 7.00532 30.2858 11.9443 30.2858H25.2696C30.2086 30.2858 34.3597 26.5876 34.3597 21.8517V11.6842C34.3597 6.94827 30.2086 3.25 25.2696 3.25Z" stroke="#E1E1E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			</g>
+			<path id="Vector_4" d="M10.8472 10.6788H19.1706" stroke="#E1E1E1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+		</g>
+	</g>
+</svg>
