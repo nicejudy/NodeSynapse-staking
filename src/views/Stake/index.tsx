@@ -103,7 +103,9 @@ function Stake() {
                         <div className="stake-card-area">
                             {!isConnected && (
                                 <div className="stake-card-wallet-notification">
-                                    <RoundedConnectButton />
+                                    <div style={{ display: "flex", justifyContent: "center" }}>
+                                        <RoundedConnectButton />
+                                    </div>
                                     <p className="stake-card-wallet-desc-text">Connect your wallet to stake NS tokens!</p>
                                 </div>
                             )}
