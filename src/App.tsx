@@ -1,4 +1,4 @@
-import "src/style.scss";
+import "./style.scss";
 
 import { useMediaQuery } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
