@@ -51,7 +51,7 @@ function Header({ handleDrawerToggle, drawe }: IHeader) {
             {/* <AppBar className={classes.appBar} elevation={0}> */}
             <Toolbar disableGutters className="dapp-topbar">
                 <div className="dapp-topbar-slider-btn">
-                    <Link href="https://wonderland.money" target="_blank">
+                    <Link href="https://staking.nodesynapse.app" target="_blank">
                         <img alt="" src={WonderlandIcon} width="50px" />
                     </Link>
                 </div>

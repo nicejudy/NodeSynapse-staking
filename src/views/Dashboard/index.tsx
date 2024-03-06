@@ -7,6 +7,7 @@ import { Skeleton } from "@material-ui/lab";
 import { IReduxState } from "../../store/slices/state.interface";
 import { IAccountSlice } from "src/store/slices/account-slice";
 import { IAppSlice } from "../../store/slices/app-slice";
+import Social from "src/components/Drawer/drawer-content/social";
 import Stake from "../Stake";
 import Claim from "../Claim";
 
@@ -51,6 +52,9 @@ function Dashboard() {
                 </Grid>
                 <Stake />
                 <Claim />
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                    <Social />
+                </div>
             </div>
         </div>
     );

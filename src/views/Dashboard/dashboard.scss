@@ -85,3 +85,19 @@
     }
   }
 }
+
+.social-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 1.3rem;
+  a {
+    &:hover {
+      transform: scale(1.1);
+    }
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

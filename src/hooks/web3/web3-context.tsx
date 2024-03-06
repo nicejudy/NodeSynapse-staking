@@ -60,14 +60,14 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
         new Web3Modal({
             cacheProvider: true,
             providerOptions: {
-                walletconnect: {
-                    package: WalletConnectProvider,
-                    options: {
-                        rpc: {
-                            [Networks.AVAX]: getMainnetURI(),
-                        },
-                    },
-                },
+                // walletconnect: {
+                //     package: WalletConnectProvider,
+                //     options: {
+                //         rpc: {
+                //             [Networks.AVAX]: getMainnetURI(),
+                //         },
+                //     },
+                // },
             },
         }),
     );
