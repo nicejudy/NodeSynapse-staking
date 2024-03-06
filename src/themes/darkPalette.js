@@ -24,8 +24,8 @@ export const darkPalette = {
     10: "#EEE9E2",
   },
   primary: {
-    300: "#16efdd",
-    100: "#98f4ec",
+    300: "rgba(255, 255, 255, .2)",
+    100: "rgba(255, 255, 255, .1)",
   },
   special: {
     olyZaps: "#242424",

@@ -142,17 +142,17 @@ a:hover svg {
   border: 1px solid white;
 
   &:hover {
-    border: 1px solid #16efdd;
-    color: #16efdd;
+    border: 1px solid rgba(255, 255, 255, .2);
+    color: rgba(255, 255, 255, .2);
     background: none;
   };
 
   &:hover path {
-    stroke: #16efdd,
+    stroke: rgba(255, 255, 255, .2),
   };
 
   &:active path {
-    stroke: #16efdd,
+    stroke: rgba(255, 255, 255, .2),
   }
 }
 .wallet-connect-link path {
@@ -162,17 +162,17 @@ a:hover svg {
   color: #181A1D;
   border: 1px solid #181A1D;
   &:hover {
-    border: 1px solid #16efdd;
-    color: #16efdd;
+    border: 1px solid rgba(255, 255, 255, .2);
+    color: rgba(255, 255, 255, .2);
     background: none;
   };
 
   &:hover path {
-    stroke: #16efdd,
+    stroke: rgba(255, 255, 255, .2),
   };
 
   &:active path {
-    stroke: #16efdd,
+    stroke: rgba(255, 255, 255, .2),
   }
 }
 
