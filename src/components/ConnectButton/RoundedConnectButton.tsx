@@ -43,9 +43,9 @@ export const RoundedConnectButton = () => {
                     flexDirection="row"
                     alignItems="center"
                     sx={{
-                      height: "50px",
+                      height: "40px",
                       width: '210px',
-                      borderRadius: "25px",
+                      borderRadius: "10px",
                       padding: "10px 28px",
                       cursor: "pointer",
                       background: theme.colors.primary[300],
