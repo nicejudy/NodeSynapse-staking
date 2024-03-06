@@ -80,6 +80,7 @@
       .stake-card-wallet-notification{
         display: flex;
         justify-content: center;
+        flex-direction: column;
         text-align: center;
 
         .stake-card-wallet-connect-btn{
